@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutron Diffusion and Moderation | Nuclear Hub</title>
+
+    <!-- Meta tags -->
+    <meta name="description" content="A technical overview of the principles of neutron diffusion, including Fick's Law, the equation of continuity, and the group diffusion method.">
+    <meta name="keywords" content="neutron diffusion, fick's law, diffusion equation, nuclear reactor physics, moderation">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to the SINGLE reusable stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../../index.html" class="logo">N/H</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html#topics">Topics</a></li>
+                    <li><a href="4qna.html">Q&A</a></li>
+                </ul>
+            </nav>
+            <button class="theme-switch" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Neutron Diffusion and Moderation</h1>
+            </div>
+        </section>
+
+        <!-- Main Article Content -->
+        <section class="article-content">
+            <div class="container article-body">
+                <ul>
+                    <li>Fick's Law</li>
+                    <li>The Equation of Continuity</li>
+                    <li>The Diffusion Equation</li>
+                    <li>Solutions to The Diffusion Equation</li>
+                    <li>The Group Diffusion Method</li>
+                </ul>
+
+                <h2>Fick's Law</h2>
+                <p>Diffusion theory is based on Fick's Law</p>
+                <p>Solute will diffuse from high concentration to low</p>
+                <div class="equation-block">
+                    <img src="../svgs/ficks-law.svg" alt="Fick's Law equation">
+                    <p>where D is the diffusion coefficient, φ is the neutron flux and J is the neutron current density vector</p>
+                </div>
+
+                <h2>The Equation of Continuity</h2>
+                <p>Since neutrons do not disappear (β-decay neglected) the following must be true for an arbitrary volume V.</p>
+                <div class="equation-block">
+                    <p>[Rate of change in number of neutrons in V] = [rate of production of neutrons in V] - [rate of absorption of neutrons in V] - [rate of leakage of neutrons from V]</p>
+                </div>
+                <figure>
+                    <img src="../svgs/equationofcontinuity.svg" alt="Equation of Continuity">
+                </figure>
+                <p>In mathematical terms the Equation of Continuity can be expressed as</p>
+                <div class="equation-block">
+                    <img src="../svgs/continuity-math.svg" alt="Mathematical Equation of Continuity"><br>
+                    <img src="../svgs/continuity-math2.svg" alt="Mathematical Equation of Continuity"><br>
+                    <img src="../svgs/continuity-math3.svg" alt="Mathematical Equation of Continuity"><br>
+                    <img src="../svgs/continuity-math4.svg" alt="Mathematical Equation of Continuity">
+                    <p>..........<br>where n is the density of neutrons, s is the rate at which neutrons are emitted from sources per cm3, Σa is the macroscopic absorption cross-section, J is the neutron current density vector and φ is the neutron flux</p>
+                </div>
+
+                <h2>The Diffusion Equation</h2>
+                <p>Two unknowns; the neutron density n and the neutron current density vector J.</p>
+                <p>Substitute Fick's law into the equation</p>
+                <div class="equation-block">
+                    <p>General:</p>
+                    <img src="../svgs/diffusion.svg" alt="General Diffusion Equation">
+                </div>
+                <div class="equation-block">
+                    <p>Time-Independent:</p>
+                    <img src="../svgs/time-independent.svg" alt="Time-Independent Diffusion Equation">
+                </div>
+                <div class="equation-block">
+                    <p>or</p>
+                    <img src="../svgs/time-independent-alt.svg" alt="Alternative Time-Independent Diffusion Equation">
+                </div>
+                <div class="equation-block">
+                    <img src="../svgs/time-independent-alt2.svg" alt="Alternative Time-Independent Diffusion Equation 2">
+                    <p>where L<sup>2</sup> = D/Σa. L is called the diffusion length</p>
+                </div>
+
+                <h2>Solutions to The Diffusion Equation</h2>
+                <p>Infinite Planar Source</p>
+                <div class="equation-block">
+                    <img src="../svgs/infinite-planar.svg" alt="Infinite Planar Source Equation">
+                </div>
+                <p>Point Source</p>
+                <div class="equation-block">
+                    <img src="../svgs/point-source.svg" alt="Point Source Equation">
+                </div>
+                <p>Bare Slab, width 2a (a˜ = a + d is called extrapolated boundary)</p>
+                <div class="equation-block">
+                    <img src="../svgs/bare-slab.svg" alt="Bare Slab Equation">
+                </div>
+
+                <h2>The Group Diffusion Method</h2>
+                <p>Neutrons emitted with a continuous energy spectrum.</p>
+                <p>Divided into N energy intervals.</p>
+                <p>Averaged diffusion coefficients and cross-section.</p>
+                <p>The flux of neutrons in a group g is described by</p>
+                <div class="equation-block">
+                    <img src="../svgs/group-flux.svg" alt="Group Flux Equation">
+                    <p>where φ(E) is the energy-dependent neutron flux.</p>
+                </div>
+                <p>The absorption rate in a specific group is given by</p>
+                <div class="equation-block">
+                    <img src="../svgs/absorption-rate.svg" alt="Absorption Rate Equation">
+                </div>
+                <p>We can define the macroscopic group absorption cross-section, Σag, as</p>
+                <div class="equation-block">
+                    <img src="../svgs/macro gr absorption.svg" alt="macroscopic group absorption cross-section">
+                </div>
+                <p>Then the absorption rate can be written as</p>
+                <div class="equation-block">
+                    <img src="../svgs/absorption rate 2.svg" alt="absorption rate equation">
+                </div>
+                <p>The rate at which neutrons transfers from group g to h is given by</p>
+                <div class="equation-block">
+                    <img src="../svgs/transfer rate.svg" alt="neutrons transfers equation">
+                </div>
+                <p>where Σg→h is called the group transfer cross-section</p>
+                <div class="equation-block">
+                    <img src="../svgs/group-transfer-cross-section.svg" alt="group transfer cross-section">
+                </div>
+                <p>Analogy, the rate at which neutrons transfers from group h into g is given by</p>
+                <div class="equation-block">
+                    <img src="../svgs/transfer-rate-alt.svg" alt="neutrons transfers equation alternative">
+                </div>
+                <p>This gives the steady-state diffusion equation for group g</p>
+                <div class="equation-block">
+                    <img src="../svgs/diffusion-equation-group-g.svg" alt="Diffusion Equation for Group g">
+                </div>
+                <p>The Diffusion Equation for Groups</p>
+                <div class="equation-block">
+                    <img src="../svgs/diffusion-equation-groups.svg" alt="Diffusion Equation for Groups">
+                    <p>where the group-diffusion coefficient Dg is defined by</p>
+                    <img src="../svgs/diffusion-equation-groups.svg" alt="Group Diffusion Coefficient">
+                </div>
+                <p>At least two groups must be used to obtain reasonable result</p>
+                <p>Thermal neutrons and fast neutrons</p>
+                <p>For a point source emitting S fast neutrons per second, the Diffusion Equation can be written (Σ1 = Σ1→2)</p>
+                <div class="equation-block">
+                    <img src="../svgs/diffusion-equation-point-source.svg" alt="Diffusion Equation for Point Source">
+                </div>
+                <p>Σa1 ≈ 0 above thermal energies.</p>
+                <p>Only two groups → only Σ1→2 is non-zero in the third term</p>
+                <p>No thermal neutrons are scattered into the fast group.</p>
+                <p>For neutrons in the thermal group, the diffusion equation can be written</p>
+                <div class="equation-block">
+                    <img src="../svgs/diffusion-equation-thermal-group.svg" alt="Diffusion Equation for Thermal Group">
+                </div>
+                <p>Necessary to solve for fast neutrons first</p>
+                <div class="equation-block">
+                    <img src="../svgs/solve-fast-neutrons-first.svg" alt="Solve for Fast Neutrons First">
+                </div>
+                <p>then</p>
+                <div class="equation-block">
+                    <img src="../svgs/then-equation.svg" alt="Then Equation"><br>
+                    <img src="../svgs/then2.svg" alt="then-equation 2">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Nuclear Hub. An open resource for the curious.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

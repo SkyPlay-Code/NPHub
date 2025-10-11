@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background-image.jpg'); /* add a background image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.image-container {
+  max-width: 800px; /* set a maximum width for the container */
+  margin: 40px auto; /* center the container */
+  padding: 20px;
+  background-color: #f7f7f7; /* add a light gray background */
+  border: 1px solid #ddd; /* add a light gray border */
+  border-radius: 10px; /* add a slight rounded corner */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%; /* make the image responsive */
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.caption {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
